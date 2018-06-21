@@ -115,6 +115,34 @@
         answer: 'C',
         yours:''
     })
+    q.push({
+        code: 'var a=1;\n  (a++,delete a,a)' ,
+        A: '1',
+        B: '2',
+        C: 'error',
+        D: 'undefined',
+        answer: 'B',
+        yours:''
+    })
+    q.push({
+        code: 'var a=[1,2,3]\n' +
+        'delete a.length\n' +
+        'var {length}=a\n' +
+        'a.pop()\n' +
+        'length' ,
+        A: '3',
+        B: '2',
+        C: 'error',
+        D: 'other',
+        answer: 'A',
+        yours:''
+    })
+
+
+
+
+
+
 
 
 
