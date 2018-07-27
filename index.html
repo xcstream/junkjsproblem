@@ -147,7 +147,17 @@
         answer: 'B',
         yours:''
     })
-
+    q.push({
+        code: 's=Symbol(\'s=1\')\n'+
+        'a=eval(s.toString())'+
+        'a',
+        A: 'Symbol()',
+        B: 'Symbol(1)',
+        C: 'error',
+        D: 'other',
+        answer: 'B',
+        yours:''
+    })
 
 
 
