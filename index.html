@@ -158,13 +158,28 @@
         answer: 'B',
         yours:''
     })
-
-
-
-
-
-
-
+    q.push({
+        code: `var t=0
+for (var i of function*(){
+&nbsp&nbspfor (var i of function*(){
+&nbsp&nbsp&nbsp&nbspfor(var i=0;i<10;i++){
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbspyield i++
+&nbsp&nbsp&nbsp&nbsp}
+&nbsp&nbsp}()){
+&nbsp&nbsp&nbsp&nbspyield i++
+&nbsp&nbsp}
+}()){
+&nbsp&nbspt+=i
+}
+t
+`,
+        A: '0',
+        B: '10',
+        C: '20',
+        D: 'other',
+        answer: 'C',
+        yours:''
+    })
 
     app=new Vue({
         el:'#app',
